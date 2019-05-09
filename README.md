@@ -2,4 +2,7 @@
 
 ### Comandos importantes.
 
-* Em breve vou descrever alguns dos principais comandos.
+* Lista todos os containers que estão rodando
+```
+docker ps
+```
