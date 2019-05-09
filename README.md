@@ -6,3 +6,8 @@
 ```
 docker ps
 ```
+
+* Lista todos os containers criados que não estão rodando
+```
+docker ps -a
+```
