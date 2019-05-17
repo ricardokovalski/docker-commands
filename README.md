@@ -8,21 +8,21 @@
 
 ```docker ps -a```
 
-### Parando um container
+### Parando um container pelo ContainerID
 
-```docker stop [containerID]```
+```docker stop [ContainerID]```
 
 ### Parando TODOS os containers que estão em uso
 
 ```docker stop $(docker ps -aq)```
 
-### Startando um container
+### Startando um container pelo ContainerID
 
-```docker start [containerID]```
+```docker start [ContainerID]```
 
-### Apagando um container
+### Apagando um container pelo ContainerID
 
-```docker rm [containerID]```
+```docker rm [ContainerID]```
 
 ### Apagando TODOS os containers
 
