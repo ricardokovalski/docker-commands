@@ -27,3 +27,7 @@
 ### Apagando TODOS os containers
 
 ```docker rm $(docker ps -aq)```
+
+### Apagando TODAS as imagens
+
+```docker rmi $(docker images -aq)``
