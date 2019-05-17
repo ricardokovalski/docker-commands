@@ -30,4 +30,4 @@
 
 ### Apagando TODAS as imagens
 
-```docker rmi $(docker images -aq)``
+```docker rmi $(docker images -aq)```
