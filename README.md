@@ -3,46 +3,46 @@
 
 ### Listando os containers
 
-Containers em uso
+* Containers em uso
 
 ```docker ps```
 
-Containers que não estão sendo usados
+* Containers que não estão sendo usados
 
 ```docker ps -a```
 
 
-## Parando containers
+### Parando containers
 
-### Parar um container pelo ID
+* Parar um container pelo ID
 
 ```docker stop [ContainerID]```
 
-### Para TODOS os containers que estão em uso
+* Para TODOS os containers que estão em uso
 
 ```docker stop $(docker ps -aq)```
 
 
-## Iniciando containers
+### Iniciando containers
 
-### Startando um container pelo ID
+* Startando um container pelo ID
 
 ```docker start [ContainerID]```
 
 
-## Apagar containers
+### Apagar containers
 
-### Apagando um container pelo ID
+* Apagando um container pelo ID
 
 ```docker rm [ContainerID]```
 
-### Apagando TODOS os containers
+* Apagando TODOS os containers
 
 ```docker rm $(docker ps -aq)```
 
 
-## Apagar imagens
+### Apagar imagens
 
-### Apagando TODAS as imagens
+* Apagando TODAS as imagens
 
 ```docker rmi $(docker images -aq)```
