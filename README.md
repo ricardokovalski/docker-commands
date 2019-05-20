@@ -1,32 +1,47 @@
 # Docker Commands
 
-### Lista os containers em uso
+
+## Listando os containers
+
+### Containers em uso
 
 ```docker ps```
 
-### Lista os containers que não estão sendo usados
+### Containers que não estão sendo usados
 
 ```docker ps -a```
 
-### Parando um container pelo ContainerID
+
+## Parando containers
+
+### Parar um container pelo ID
 
 ```docker stop [ContainerID]```
 
-### Parando TODOS os containers que estão em uso
+### Para TODOS os containers que estão em uso
 
 ```docker stop $(docker ps -aq)```
 
-### Startando um container pelo ContainerID
+
+## Iniciando containers
+
+### Startando um container pelo ID
 
 ```docker start [ContainerID]```
 
-### Apagando um container pelo ContainerID
+
+## Apagar containers
+
+### Apagando um container pelo ID
 
 ```docker rm [ContainerID]```
 
 ### Apagando TODOS os containers
 
 ```docker rm $(docker ps -aq)```
+
+
+## Apagar imagens
 
 ### Apagando TODAS as imagens
 
