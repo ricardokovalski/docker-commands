@@ -11,52 +11,64 @@ docker ps
 
 * Containers que não estão sendo usados
 
-```docker ps -a```
-
+```dockerfile
+docker ps -a
+```
 
 ### Listando as imagens
 
 * Imagens instaladas
 
-```docker images```
-
+```dockerfile
+docker images
+```
 
 ### Parando containers
 
 * Parar um container pelo ID
 
-```docker stop [ContainerID]```
+```dockerfile
+docker stop [ContainerID]
+```
 
 * Para **TODOS** os containers que estão em uso
 
-```docker stop $(docker ps -aq)```
-
+```dockerfile
+docker stop $(docker ps -aq)
+```
 
 ### Iniciando containers
 
 * Startando um container pelo ID
 
-```docker start [ContainerID]```
-
+```dockerfile
+docker start [ContainerID]
+```
 
 ### Apagar containers
 
 * Apagando um container pelo ID
 
-```docker rm [ContainerID]```
+```dockerfile
+docker rm [ContainerID]
+```
 
 * Apagando **TODOS** os containers
 
-```docker rm $(docker ps -aq)```
-
-
+```dockerfile
+docker rm $(docker ps -aq)
+```
 
 ### Apagar imagens
 
 * Apagando uma imagem pelo ID
 
-```docker rm [ImageID]```
+```dockerfile
+docker rm [ImageID]
+```
 
 * Apagando **TODAS** as imagens
 
-```docker rmi $(docker images -aq)```
+```dockerfile
+docker rmi $(docker images -aq)
+```
