@@ -11,6 +11,12 @@
 
 ```docker ps -a```
 
+### Listando as imagens
+
+* Imagens instaladas
+
+```docker images```
+
 
 ### Parando containers
 
