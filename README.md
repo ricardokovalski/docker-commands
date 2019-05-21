@@ -49,6 +49,10 @@
 
 ### Apagar imagens
 
+* Apagando uma imagem pelo ID
+
+```docker rm [ImageID]```
+
 * Apagando TODAS as imagens
 
 ```docker rmi $(docker images -aq)```
