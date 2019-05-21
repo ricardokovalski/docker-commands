@@ -11,11 +11,13 @@
 
 ```docker ps -a```
 
+
 ### Listando as imagens
 
 * Imagens instaladas
 
 ```docker images```
+
 
 
 ### Parando containers
@@ -29,11 +31,13 @@
 ```docker stop $(docker ps -aq)```
 
 
+
 ### Iniciando containers
 
 * Startando um container pelo ID
 
 ```docker start [ContainerID]```
+
 
 
 ### Apagar containers
@@ -45,6 +49,7 @@
 * Apagando TODOS os containers
 
 ```docker rm $(docker ps -aq)```
+
 
 
 ### Apagar imagens
