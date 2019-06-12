@@ -40,17 +40,39 @@ docker rmi $(docker images -aq)
 ```
 
 
-### Listando os containers em uso
+### Criando containers
+
+```
+docker run [ImageName]
+```
+
+### Criando e acessando um container
+
+```
+docker run -it [ContainerName] /bin/bash
+```
+
+### Criando um container com apelido
+
+```
+docker run --name [Nickname] [Containername]
+```
+
+
+### Listando os containers
+
+* Todos que estiverem em uso
 
 ```
 docker ps
 ```
 
-* Containers que não estão sendo usados
+* Todos os containers criados incluindo os que estiverem inativos
 
 ```
 docker ps -a
 ```
+
 
 ### Parando containers
 
@@ -66,6 +88,7 @@ docker stop [ContainerID]
 docker stop $(docker ps -aq)
 ```
 
+
 ### Iniciando containers
 
 * Startando um container pelo ID
@@ -73,6 +96,7 @@ docker stop $(docker ps -aq)
 ```
 docker start [ContainerID]
 ```
+
 
 ### Apagar containers
 
@@ -86,4 +110,12 @@ docker rm [ContainerID]
 
 ```
 docker rm $(docker ps -aq)
+```
+
+### Informações úteis
+
+* Uso de hardware do container
+
+```
+docker stats [ContainerID]
 ```
